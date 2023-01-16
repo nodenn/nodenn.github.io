@@ -12,7 +12,7 @@ module.exports = {
     title: `나다`,
     description: `Gatsby 블로그 만들어보고 있다.`,
     author: `나임`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://nodennth.github.io/`,
   },
   plugins: [
     // `gatsby-plugin-image`,
@@ -87,7 +87,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: '<https://my-website.com />',
+        siteUrl: 'https://nodennth.github.io',
         stripQueryString: true,
       },
     },
