@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://nodennth.github.io/sitemap-index.xml
-Host: https://nodennth.github.io
+Sitemap: https://nodenn.github.io/sitemap-index.xml
+Host: https://nodenn.github.io
