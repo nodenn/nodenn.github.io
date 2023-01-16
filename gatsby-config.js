@@ -87,7 +87,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://nodennth.github.io',
+        siteUrl: 'https://nodennth.github.io/',
         stripQueryString: true,
       },
     },
