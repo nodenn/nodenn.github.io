@@ -55,15 +55,16 @@ const Category = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
-  margin: 10px -5px;
+  margin: 9px -3px 10px;
 `
 
 const CategoryItem = styled.div`
-  margin: 2.5px 5px;
+  margin: 2.5px 3px;
   padding: 3px 5px;
   border-radius: 3px;
   background: black;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 14px;
   font-weight: 700;
   color: white;
 `
@@ -77,7 +78,7 @@ const Summary = styled.div`
   overflow-wrap: break-word;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-size: 16px;
+  font-size: 14px;
   opacity: 0.8;
 `
 
@@ -94,7 +95,6 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
   return (
     <PostItemWrapper to={link}>
       <ThumbnailImage image={gatsbyImageData} alt="Post Item Image" />
-
       <PostItemContent>
         <Title>{title}</Title>
         <Date>{date}</Date>
