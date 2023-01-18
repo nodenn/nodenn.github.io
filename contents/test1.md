@@ -6,8 +6,8 @@ summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검�
 thumbnail: './test1.jpg'
 ---
 
-<!-- ![poster](https://github.com/nodenn/nodenn.github.io/blob/e7d79a877941a1d792d375378bdd898ff8f4e785/contents/potions.jpg?raw=truep) -->
-<img src='https://github.com/nodenn/nodenn.github.io/blob/e7d79a877941a1d792d375378bdd898ff8f4e785/contents/potions.jpg?raw=true' width='300px' height='100%'>
+<!-- ![poster](https://github.com/nodenn/nodenn.github.io/blob/develop/contents/test1.jpg?raw=true) -->
+<img src='https://github.com/nodenn/nodenn.github.io/blob/develop/contents/test1.jpg?raw=true' width='300px' height='100%'>
 
 # 1. Help Google Bot to Find My Contents
 
