@@ -68,6 +68,12 @@ const PostData = styled.div`
   font-size: 18px;
   font-weight: 700;
 
+  .date {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
@@ -91,7 +97,7 @@ const PostHeadInfo: FunctionComponent<PostHeadInfoProps> = function ({
       <Title>{title}</Title>
       <PostData>
         <div>{categories.join(' / ')}</div>
-        <div>{date}</div>
+        <div class="date">{date}</div>
       </PostData>
     </PostHeadInfoWrapper>
   )

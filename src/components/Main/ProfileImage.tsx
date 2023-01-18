@@ -9,12 +9,13 @@ type ProfileImageProps = {
 const ProfileImageWrapper = styled(GatsbyImage)`
   width: 120px;
   height: 120px;
-  margin-bottom: 30px;
+  margin-right: 30px;
   border-radius: 50%;
 
   @media (max-width: 768px) {
     width: 80px;
     height: 80px;
+    margin-right: 23px;
   }
 `
 

@@ -23,6 +23,10 @@ const ThumbnailImage = styled(GatsbyImage)`
   width: 100%;
   height: 200px;
   border-radius: 10px 10px 0 0;
+  
+  @media (max-width: 768px) {
+    height: 180px;
+  }
 `
 
 const PostItemContent = styled.div`
@@ -80,6 +84,10 @@ const Summary = styled.div`
   -webkit-box-orient: vertical;
   font-size: 14px;
   opacity: 0.8;
+  
+  @media (max-width: 768px) {
+    
+  }
 `
 
 const PostItem: FunctionComponent<PostItemProps> = function ({

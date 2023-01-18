@@ -1,13 +1,13 @@
 ---
-date: '2020-07-29'
-title: 'Test22'
+date: '1996-03-29'
+title: '한글 제목'
 categories: ['xxx']
 summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검색 페이지 최상단에 보여지게 하기 위해 어떤 최적화 작업을 하는지 알아보자.'
-thumbnail: './potions.jpg'
+thumbnail: './test1.jpg'
 ---
 
-![poster](http://localhost:8000/static/1eb792ef1699b9f03c965746548d5a9a/1b9a0/potions.webp)
-<img src='http://localhost:8000/static/1eb792ef1699b9f03c965746548d5a9a/1b9a0/potions.webp' width='300px' height='100%'>
+<!-- ![poster](https://github.com/nodenn/nodenn.github.io/blob/e7d79a877941a1d792d375378bdd898ff8f4e785/contents/potions.jpg?raw=truep) -->
+<img src='https://github.com/nodenn/nodenn.github.io/blob/e7d79a877941a1d792d375378bdd898ff8f4e785/contents/potions.jpg?raw=true' width='300px' height='100%'>
 
 # 1. Help Google Bot to Find My Contents
 
