@@ -42,13 +42,15 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   font-weight: ${({ active }) => (active ? '700' : '400')};
   cursor: pointer;
   font-family: Montserrat;
+  line-height: 20px;
 
   &:last-of-type {
     margin-right: 0;
   }
 
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 14px;
+    margin-right: 16px;
   }
 `
 

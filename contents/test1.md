@@ -9,22 +9,192 @@ thumbnail: './test1.jpg'
 <!-- ![poster](https://github.com/nodenn/nodenn.github.io/blob/develop/contents/test1.jpg?raw=true) -->
 <img src='https://github.com/nodenn/nodenn.github.io/blob/develop/contents/test1.jpg?raw=true' width='300px' height='100%'>
 
-# 1. Help Google Bot to Find My Contents
+Here will a normal code block go:
 
-구글에 SiteMap을 제출하여 사이트에 있는 파일로서 새 페이지나 변경된 페이지가 있을 때 이를 검색 엔진에 알려주도록 할 수 있다.
+```js
+(function() {
 
-SiteMap은 사이트에 있는 페이지, 동영상 및 기타 파일과 각 관계에 관한 정보를 제공하는 파일로, 검색 엔진은 이를 읽고 사이트를 더 지능적으로 크롤링 할 수 있게 된다.
+var cache = {};
+var form = $('form');
+var minified = true;
 
-## 2. Use 'Robots.txt' File
+var dependencies = {};
 
-Robots.txt 파일은 검색 엔진에 어떤 페이지를 크롤링해도 되는지 알리는 파일로, 서버의 루트 디렉토리에 있어야 한다.
+var treeURL = 'https://api.github.com/repos/PrismJS/prism/git/trees/gh-pages?recursive=1';
+var treePromise = new Promise(function(resolve) {
+  $u.xhr({
+    url: treeURL,
+    callback: function(xhr) {
+      if (xhr.status < 400) {
+        resolve(JSON.parse(xhr.responseText).tree);
+      }
+    }
+  });
+});
+```
 
-과도한 Robots.txt 파일은 더 많은 방문자를 유도할 수 있는 정상적인 검색 엔진 크롤러의 접근을 막을 가능성이 있기 때문에 적절하게 설정해야 한다.
+A code block with a JSDoc comment, short, and long comment:
 
----
+```js
+/**
+ * Get value out of string (e.g. rem => px)
+ * If value is px strip the px part
+ * If the input is already a number only return that value
+ * @param {string | number} input
+ * @param {number} [rootFontSize]
+ * @return {number} Number without last three characters
+ * @example removeLastThree('6rem') => 6
+ */
+const getValue = (input, rootFontSize = 16) => {
+  if (typeof input === `number`) {
+    return input / rootFontSize;
+  }
 
-## Source
+  const isPxValue = input.slice(-2) === `px`;
 
-- SEO 기본 가이드
+  if (isPxValue) {
+    return parseFloat(input.slice(0, -2));
+  }
 
-  [<https://support.google.com/webmasters/answer/7451184?hl=ko&ref_topic=9460495>](https://support.google.com/webmasters/answer/7451184?hl=ko&ref_topic=9460495)
+  return parseFloat(input.slice(0, -3));
+};
+
+// This is a little helper function
+const helper = (a, b) => a + b;
+
+// This is also a little helper function but this time with a really long one-line comment that should show some more details
+const morehelper = (a, b) => a * b;
+
+export { getValue, helper, morehelper };
+```
+
+Normal block without language:
+
+```
+import Test from "../components/test"
+
+const Layout = ({ children }) => (
+  <Test>
+    {children}
+  </Test>
+)
+
+export default Layout
+```
+
+Code block with code highlighting:
+
+```jsx title=src/components/post.jsx highlight=5-7,10
+import * as React from "react";
+
+const Post = ({ data: { post } }) => (
+  <Layout>
+    <Heading variant="h2" as="h2">
+      {post.title}
+    </Heading>
+    <p
+      sx={{
+        color: `secondary`,
+        mt: 3,
+        a: { color: `secondary` },
+        fontSize: [1, 1, 2],
+      }}
+    >
+      <span>{post.date}</span>
+      {post.tags && (
+        <React.Fragment>
+          {` — `}
+          <ItemTags tags={post.tags} />
+        </React.Fragment>
+      )}
+    </p>
+    <section
+      sx={{
+        ...CodeStyles,
+        my: 5,
+        ".gatsby-resp-image-wrapper": { my: 5, boxShadow: `lg` },
+      }}
+    >
+      <MDXRenderer>{post.body}</MDXRenderer>
+    </section>
+  </Layout>
+);
+
+export default Post;
+```
+
+Code block without title:
+
+```
+Harry Potter and the Philosopher's Stone
+```
+
+Code block with lineNumbers (and lang):
+
+```text withLineNumbers
+Harry Potter and the Chamber of Secrets
+```
+
+Code block with lineNumbers (and without lang):
+
+```none withLineNumbers
+Harry Potter and the Chamber of Secrets
+```
+
+Code block with only the title:
+
+```none title=src/utils/scream.js
+const scream = (input) => window.alert(input)
+```
+
+Code block with only the title and with lineNumbers:
+
+```none title=src/utils/scream.js withLineNumbers
+const scream = (input) => window.alert(input)
+```
+
+Line highlighting without code title:
+
+```js highlight=2,4-5
+const test = 3;
+const foo = "bar";
+const harry = "potter";
+const hermione = "granger";
+const ron = "weasley";
+```
+
+Here will `inline code` go, just inside the text. Wow!
+
+Code block with line numbers, highlighting, language, and title:
+
+<div data-testid="code-block">
+
+```tsx title=src/components/blog.tsx highlight=7-9,16 withLineNumbers
+import * as React from "react";
+
+const Blog = ({ posts }: PostsProps) => {
+  const { tagsPath, basePath } = useSiteMetadata();
+
+  return (
+    <Layout>
+      <Flex sx={{ alignItems: `center`, justifyContent: `space-between` }}>
+        <Heading variant="h2" as="h2">
+          Blog
+        </Heading>
+        <Styled.a
+          as={Link}
+          sx={{ variant: `links.secondary` }}
+          to={`/${basePath}/${tagsPath}`.replace(/\/\/+/g, `/`)}
+        >
+          View all tags
+        </Styled.a>
+      </Flex>
+      <Listing posts={posts} sx={{ mt: [4, 5] }} />
+    </Layout>
+  );
+};
+
+export default Blog;
+```
+
+</div>

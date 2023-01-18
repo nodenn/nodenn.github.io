@@ -53,7 +53,7 @@ const Title = styled.div`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   font-size: 45px;
-  font-weight: 800;
+  font-weight: 700;
 
   @media (max-width: 768px) {
     font-size: 30px;
@@ -72,6 +72,11 @@ const PostData = styled.div`
     font-family: Montserrat;
     font-weight: 400;
     font-size: 16px;
+    
+    @media (max-width: 768px) {
+      font-size: 14px;
+      margin-top: 3px;
+    }
   }
 
   @media (max-width: 768px) {
