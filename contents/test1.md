@@ -1,7 +1,7 @@
 ---
 date: '1996-03-29'
 title: '한글 제목'
-categories: ['xxx']
+categories: ['default']
 summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검색 페이지 최상단에 보여지게 하기 위해 어떤 최적화 작업을 하는지 알아보자.'
 thumbnail: './test1.jpg'
 ---
@@ -47,25 +47,25 @@ A code block with a JSDoc comment, short, and long comment:
  */
 const getValue = (input, rootFontSize = 16) => {
   if (typeof input === `number`) {
-    return input / rootFontSize;
+    return input / rootFontSize
   }
 
-  const isPxValue = input.slice(-2) === `px`;
+  const isPxValue = input.slice(-2) === `px`
 
   if (isPxValue) {
-    return parseFloat(input.slice(0, -2));
+    return parseFloat(input.slice(0, -2))
   }
 
-  return parseFloat(input.slice(0, -3));
-};
+  return parseFloat(input.slice(0, -3))
+}
 
 // This is a little helper function
-const helper = (a, b) => a + b;
+const helper = (a, b) => a + b
 
 // This is also a little helper function but this time with a really long one-line comment that should show some more details
-const morehelper = (a, b) => a * b;
+const morehelper = (a, b) => a * b
 
-export { getValue, helper, morehelper };
+export { getValue, helper, morehelper }
 ```
 
 Normal block without language:
@@ -85,7 +85,7 @@ export default Layout
 Code block with code highlighting:
 
 ```jsx title=src/components/post.jsx highlight=5-7,10
-import * as React from "react";
+import * as React from 'react'
 
 const Post = ({ data: { post } }) => (
   <Layout>
@@ -112,15 +112,15 @@ const Post = ({ data: { post } }) => (
       sx={{
         ...CodeStyles,
         my: 5,
-        ".gatsby-resp-image-wrapper": { my: 5, boxShadow: `lg` },
+        '.gatsby-resp-image-wrapper': { my: 5, boxShadow: `lg` },
       }}
     >
       <MDXRenderer>{post.body}</MDXRenderer>
     </section>
   </Layout>
-);
+)
 
-export default Post;
+export default Post
 ```
 
 Code block without title:
@@ -156,11 +156,11 @@ const scream = (input) => window.alert(input)
 Line highlighting without code title:
 
 ```js highlight=2,4-5
-const test = 3;
-const foo = "bar";
-const harry = "potter";
-const hermione = "granger";
-const ron = "weasley";
+const test = 3
+const foo = 'bar'
+const harry = 'potter'
+const hermione = 'granger'
+const ron = 'weasley'
 ```
 
 Here will `inline code` go, just inside the text. Wow!
@@ -170,10 +170,10 @@ Code block with line numbers, highlighting, language, and title:
 <div data-testid="code-block">
 
 ```tsx title=src/components/blog.tsx highlight=7-9,16 withLineNumbers
-import * as React from "react";
+import * as React from 'react'
 
 const Blog = ({ posts }: PostsProps) => {
-  const { tagsPath, basePath } = useSiteMetadata();
+  const { tagsPath, basePath } = useSiteMetadata()
 
   return (
     <Layout>
@@ -191,10 +191,10 @@ const Blog = ({ posts }: PostsProps) => {
       </Flex>
       <Listing posts={posts} sx={{ mt: [4, 5] }} />
     </Layout>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
 ```
 
 </div>

@@ -1,9 +1,9 @@
 ---
-date: '2000-03-23'
+date: '2022-12-16'
 title: 'Graduation'
-categories: ['3to3', 'H', 'winter']
+categories: ['dream']
 summary: '영원이란 걸 꿈꾸지는 않아 지금을 빛나게 하면 돼'
-thumbnail: './test2.jpg'
+thumbnail: './graduation.jpg'
 ---
 
 언제부터 일까 내 작은 생각들

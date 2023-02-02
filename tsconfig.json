@@ -104,6 +104,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*.tsx", "src/types/PostItem.types.ts"],
+  "include": ["src/**/*.tsx", "src/types/PostItem.types.ts", "src/components/bio-content.js"],
   "exclude": ["node_modules"]
 }

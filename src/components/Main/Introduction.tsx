@@ -60,7 +60,7 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
 
         <div>
           <Title>
-            <Link to="/">Title 타이틀</Link>
+            <Link to="/">힝입니다</Link>
           </Title>
           <SubTitle>subtitle 서브타이틀</SubTitle>
         </div>

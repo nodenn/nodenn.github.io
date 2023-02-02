@@ -30,13 +30,14 @@ const MarkdownRenderer = styled.div`
   h2,
   h3 {
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   * + h1,
   * + h2,
   * + h3 {
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-bottom: 15px;
   }
 
   hr + h1,
@@ -59,17 +60,18 @@ const MarkdownRenderer = styled.div`
 
   // Adjust Quotation Element Style
   blockquote {
-    margin: 30px 0;
-    padding: 5px 15px;
-    border-left: 2px solid #000000;
+    margin: 15px 0;
+    padding: 1px 15px;
+    border-left: 2px solid #505050;
     font-weight: 800;
+    color: #777;
   }
 
   // Adjust List Element Style
   ol,
   ul {
     margin-left: 20px;
-    padding: 30px 0;
+    padding: 15px 0;
   }
 
   // Adjust Horizontal Rule style
@@ -110,14 +112,17 @@ const MarkdownRenderer = styled.div`
 
     h1 {
       font-size: 23px;
+      margin-bottom: 12px;
     }
 
     h2 {
       font-size: 20px;
+      margin-bottom: 12px;
     }
 
     h3 {
       font-size: 17px;
+      margin-bottom: 12px;
     }
 
     img {
