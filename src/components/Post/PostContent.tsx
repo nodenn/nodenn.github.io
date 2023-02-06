@@ -71,13 +71,13 @@ const MarkdownRenderer = styled.div`
   ol,
   ul {
     margin-left: 20px;
-    padding: 15px 0;
+    padding: 12px 0;
   }
 
   // Adjust Horizontal Rule style
   hr {
     border: 1px solid #000000;
-    margin: 100px 0;
+    margin: 30px 0 35px;
   }
 
   // Adjust Link Element Style
@@ -130,7 +130,7 @@ const MarkdownRenderer = styled.div`
     }
 
     hr {
-      margin: 50px 0;
+      margin: 20px 0 25px;
     }
   }
 `
