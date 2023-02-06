@@ -47,4 +47,4 @@ thumbnail: './goMongolia01.jpeg'
 
 - 추석쯤은 날씨가 좀 추워도 단풍 섞인 초원은 볼 수 있을듯함
 - 세븐데이즈 여행사는 개인 일정 견적 비용 3만원. 추후 해당 개인 일정으로 투어를 떠나면 견적비는 제외(세부 사항 아래 참조)<br>
-  <img src='https://github.com/nodenn/nodenn.github.io/blob/develop/contents/goMongolia02.png' width='300px' height='100%'>
+  <img src='https://github.com/nodenn/nodenn.github.io/blob/develop/contents/goMongolia02.png?raw=true' width='' height='100%'>
